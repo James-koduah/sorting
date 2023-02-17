@@ -9,11 +9,13 @@ void swap_nodes(listint_t *current, listint_t *last, listint_t **list);
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *head = (*list)->next;
+	listint_t *head;
 	listint_t *node;
 	
-	if (head == NULL)
+	if ((*list)->next == NULL)
 		return;
+	else
+		head = (*list)->next;
 	while (head != NULL)
 	{
 		node = head;
