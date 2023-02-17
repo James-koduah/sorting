@@ -12,10 +12,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *head;
 	listint_t *node;
 	
-	if ((*list)->next == NULL)
-		return;
-	else
-		head = (*list)->next;
+	head = (*list)->next;
 	while (head != NULL)
 	{
 		node = head;
