@@ -11,7 +11,9 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *head = (*list)->next;
 	listint_t *node;
-
+	
+	if (head == NULL)
+		return;
 	while (head != NULL)
 	{
 		node = head;
